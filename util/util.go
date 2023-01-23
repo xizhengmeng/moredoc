@@ -10,6 +10,7 @@ import (
 	"path/filepath"
 	"regexp"
 	"strings"
+	"time"
 
 	"github.com/disintegration/imaging"
 	jsoniter "github.com/json-iterator/go"
@@ -144,6 +145,12 @@ func CopyFile(src, dst string) error {
 		return fmt.Errorf("writing to output file failed: %s", err)
 	}
 	return nil
+}
+
+func ExecCommand(command string, args []string, ctime time.Duration) (out string, err error) {
+	out = ""
+	err = nil
+	return
 }
 
 func Substr(str string, length int, start ...int) string {
