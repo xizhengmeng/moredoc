@@ -1,0 +1,1501 @@
+Using config file: /Users/hanshenghui/WeWork/go-test/moredoc_new/app.toml
+{"level":"info","ts":"2023-01-24T21:13:31.085+0800","caller":"cmd/root.go:110","msg":"config","config":{"Level":"debug","Port":8880,"Database":{"DSN":"root:Han123456@tcp(localhost:3306)/moredoc?charset=utf8mb4&loc=Local&parseTime=true","ShowSQL":true,"MaxIdle":10,"MaxOpen":10,"Prefix":"mnt_"},"JWT":{"Secret":"moredoc","ExpireDays":365}}}
+{"level":"info","ts":"2023-01-24T21:13:31.085+0800","logger":"syncdb","caller":"service/syncdb.go:12","msg":"start syncdb"}
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:195
+[0m[33m[2.232ms] [34;1m[rows:23][0m show tables
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[1.750ms] [34;1m[rows:10][0m SHOW FULL COLUMNS FROM mnt_article
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[1.025ms] [34;1m[rows:16][0m SHOW FULL COLUMNS FROM mnt_attachment
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.819ms] [34;1m[rows:10][0m SHOW FULL COLUMNS FROM mnt_banner
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.826ms] [34;1m[rows:9][0m SHOW FULL COLUMNS FROM mnt_category
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.828ms] [34;1m[rows:10][0m SHOW FULL COLUMNS FROM mnt_comment
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.828ms] [34;1m[rows:11][0m SHOW FULL COLUMNS FROM mnt_config
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[1.045ms] [34;1m[rows:25][0m SHOW FULL COLUMNS FROM mnt_document
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.745ms] [34;1m[rows:5][0m SHOW FULL COLUMNS FROM mnt_document_category
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.754ms] [34;1m[rows:5][0m SHOW FULL COLUMNS FROM mnt_document_relate
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.747ms] [34;1m[rows:6][0m SHOW FULL COLUMNS FROM mnt_document_score
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.770ms] [34;1m[rows:7][0m SHOW FULL COLUMNS FROM mnt_download
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.820ms] [34;1m[rows:6][0m SHOW FULL COLUMNS FROM mnt_dynamic
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.794ms] [34;1m[rows:5][0m SHOW FULL COLUMNS FROM mnt_favorite
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.850ms] [34;1m[rows:8][0m SHOW FULL COLUMNS FROM mnt_friendlink
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.923ms] [34;1m[rows:12][0m SHOW FULL COLUMNS FROM mnt_group
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.791ms] [34;1m[rows:5][0m SHOW FULL COLUMNS FROM mnt_group_permission
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.758ms] [34;1m[rows:5][0m SHOW FULL COLUMNS FROM mnt_logout
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.762ms] [34;1m[rows:7][0m SHOW FULL COLUMNS FROM mnt_permission
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.803ms] [34;1m[rows:10][0m SHOW FULL COLUMNS FROM mnt_report
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.784ms] [34;1m[rows:6][0m SHOW FULL COLUMNS FROM mnt_sign
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.988ms] [34;1m[rows:22][0m SHOW FULL COLUMNS FROM mnt_user
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.744ms] [34;1m[rows:5][0m SHOW FULL COLUMNS FROM mnt_user_group
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:240
+[0m[33m[0.717ms] [34;1m[rows:1][0m SHOW FULL COLUMNS FROM test
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:143
+[0m[33m[0.842ms] [34;1m[rows:0][0m UPDATE `mnt_document` SET `status`=0,`updated_at`='2023-01-24 21:13:31.111' WHERE status = 1 AND `mnt_document`.`deleted_at` IS NULL
+{"level":"info","ts":"2023-01-24T21:13:31.112+0800","logger":"model","caller":"model/init.go:146","msg":"loopCovertDocument，start..."}
+
+2023/01/24 21:13:31 [31;1m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/document.go:601 [35;1mrecord not found
+[0m[33m[0.430ms] [34;1m[rows:0][0m SELECT * FROM `mnt_document` WHERE status = 0 AND `mnt_document`.`deleted_at` IS NULL ORDER BY `mnt_document`.`id` LIMIT 1
+{"level":"info","ts":"2023-01-24T21:13:31.112+0800","logger":"model","caller":"model/init.go:148","msg":"loopCovertDocument，end...","error":"record not found","cost":"514.108µs"}
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[1.752ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[1.421ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[2.189ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_attachment' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.143ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.501ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.319ms] [34;1m[rows:-][0m SELECT * FROM `mnt_attachment` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.987ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_attachment' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.111ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.438ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.952ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_attachment' AND index_name = 'hash'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.106ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.431ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[1.026ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_attachment' AND index_name = 'user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.117ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.535ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.826ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_attachment' AND index_name = 'idx_type_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.121ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.429ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.667ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_attachment' AND index_name = 'idx_type'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.386ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.668ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_banner' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.539ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.344ms] [34;1m[rows:-][0m SELECT * FROM `mnt_banner` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.998ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_banner' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.098ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.643ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.766ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_category' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.146ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.435ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.183ms] [34;1m[rows:-][0m SELECT * FROM `mnt_category` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.843ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_category' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.091ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.395ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.655ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_category' AND index_name = 'parent_id_title'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.095ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.390ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.611ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_category' AND index_name = 'parent_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.075ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.356ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.592ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_category' AND index_name = 'idx_sort'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.073ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.341ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.618ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_category' AND index_name = 'idx_enable'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.073ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.336ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.595ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_config' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.076ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.330ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.177ms] [34;1m[rows:-][0m SELECT * FROM `mnt_config` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.804ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_config' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.075ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.365ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.593ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_config' AND index_name = 'name_category'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.069ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.341ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.578ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_config' AND index_name = 'category'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.071ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.349ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.640ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.087ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.369ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.220ms] [34;1m[rows:-][0m SELECT * FROM `mnt_document` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.930ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.357ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.648ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' AND index_name = 'user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.124ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.375ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.609ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' AND index_name = 'status'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.072ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.363ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.587ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' AND index_name = 'idx_created_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.066ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.359ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.592ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' AND index_name = 'idx_deleted_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.075ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.337ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.594ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document' AND index_name = 'idx_recommend_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.071ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.349ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.667ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_category' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.080ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.364ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.199ms] [34;1m[rows:-][0m SELECT * FROM `mnt_document_category` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.763ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_category' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.078ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.347ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.592ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_category' AND index_name = 'category_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.080ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.374ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.598ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_category' AND index_name = 'document_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.075ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.358ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.588ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_category' AND index_name = 'idx_doc_cate'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.066ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.367ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.626ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_score' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.084ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.349ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.200ms] [34;1m[rows:-][0m SELECT * FROM `mnt_document_score` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.815ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_score' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.080ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.366ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.639ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_relate' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.076ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.356ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.185ms] [34;1m[rows:-][0m SELECT * FROM `mnt_document_relate` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.727ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_relate' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:32
+[0m[33m[5.345ms] [34;1m[rows:0][0m ALTER TABLE `mnt_document_relate` MODIFY COLUMN `document_id` bigint(20) DEFAULT 0 COMMENT ''
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.190ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.582ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.853ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_document_relate' AND index_name = 'idx_document_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.153ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.534ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.840ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_download' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.160ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.511ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.228ms] [34;1m[rows:-][0m SELECT * FROM `mnt_download` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.926ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_download' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.081ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.529ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.733ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_download' AND index_name = 'idx_user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.085ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.451ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.676ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_download' AND index_name = 'idx_document_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.125ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.467ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.643ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_download' AND index_name = 'idx_created_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.093ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.454ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.648ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_friendlink' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.090ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.430ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.220ms] [34;1m[rows:-][0m SELECT * FROM `mnt_friendlink` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[1.018ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_friendlink' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.092ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.458ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.679ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_user' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.094ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.378ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.219ms] [34;1m[rows:-][0m SELECT * FROM `mnt_user` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.940ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_user' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:32
+[0m[33m[5.511ms] [34;1m[rows:0][0m ALTER TABLE `mnt_user` MODIFY COLUMN `username` varchar(64) COMMENT '用户名'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:32
+[0m[33m[8.095ms] [34;1m[rows:0][0m ALTER TABLE `mnt_user` MODIFY COLUMN `email` varchar(64) COMMENT '联系邮箱'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.173ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.635ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.824ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_user' AND index_name = 'mobile'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.155ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.506ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.700ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_user' AND index_name = 'idx_email'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.129ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.444ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.699ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_user' AND index_name = 'status'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.119ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.520ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.677ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_user' AND index_name = 'username'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.111ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.410ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.681ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_group' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.097ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.339ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.193ms] [34;1m[rows:-][0m SELECT * FROM `mnt_group` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.979ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_group' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:32
+[0m[33m[5.627ms] [34;1m[rows:0][0m ALTER TABLE `mnt_group` MODIFY COLUMN `title` varchar(64) COMMENT '用户组名称'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.141ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.541ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.713ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_group' AND index_name = 'title'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.125ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.439ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.649ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_group' AND index_name = 'is_default'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.084ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.404ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.653ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_user_group' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.108ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.416ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.209ms] [34;1m[rows:-][0m SELECT * FROM `mnt_user_group` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.836ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_user_group' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.096ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.402ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.671ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_user_group' AND index_name = 'user_group'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.098ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.377ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.597ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_user_group' AND index_name = 'user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.089ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.383ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.633ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_permission' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.088ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.356ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.213ms] [34;1m[rows:-][0m SELECT * FROM `mnt_permission` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.790ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_permission' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.089ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.390ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.617ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_permission' AND index_name = 'method_path'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.071ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.375ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.626ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_group_permission' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.081ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.371ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.211ms] [34;1m[rows:-][0m SELECT * FROM `mnt_group_permission` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.755ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_group_permission' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.401ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.614ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_group_permission' AND index_name = 'group_permission'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.093ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.426ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.616ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_group_permission' AND index_name = 'group_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.086ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.393ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.676ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_logout' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.100ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.362ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.190ms] [34;1m[rows:-][0m SELECT * FROM `mnt_logout` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.804ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_logout' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:32
+[0m[33m[3.265ms] [34;1m[rows:0][0m ALTER TABLE `mnt_logout` MODIFY COLUMN `uuid` varchar(36) NOT NULL COMMENT 'jwt的uuid'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.117ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.492ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.622ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_logout' AND index_name = 'idx_mnt_logout_uuid'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.352ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.628ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_logout' AND index_name = 'idx_mnt_logout_expired_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.087ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.365ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.622ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_article' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.371ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.228ms] [34;1m[rows:-][0m SELECT * FROM `mnt_article` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.876ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_article' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:32
+[0m[33m[4.760ms] [34;1m[rows:0][0m ALTER TABLE `mnt_article` MODIFY COLUMN `identifier` varchar(64) COMMENT '文章标识，唯一'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.127ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.471ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.681ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_article' AND index_name = 'identifier'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.091ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.387ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.659ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_favorite' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.087ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.360ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.183ms] [34;1m[rows:-][0m SELECT * FROM `mnt_favorite` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.814ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_favorite' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.092ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.386ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.605ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_favorite' AND index_name = 'idx_user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.076ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.365ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.591ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_favorite' AND index_name = 'idx_user_document'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.079ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.356ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.580ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_favorite' AND index_name = 'idx_created_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.075ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.365ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.650ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_comment' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.085ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.375ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.195ms] [34;1m[rows:-][0m SELECT * FROM `mnt_comment` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.788ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_comment' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.101ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.386ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.600ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_comment' AND index_name = 'idx_user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.071ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.352ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.589ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_comment' AND index_name = 'idx_parent_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.071ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.338ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.611ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_comment' AND index_name = 'idx_document_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.076ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.338ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.631ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_dynamic' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.077ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.354ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.197ms] [34;1m[rows:-][0m SELECT * FROM `mnt_dynamic` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.793ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_dynamic' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.081ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.339ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.589ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_dynamic' AND index_name = 'idx_user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.077ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.362ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.587ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_dynamic' AND index_name = 'idx_type'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.085ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.373ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.629ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_sign' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.087ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.349ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.201ms] [34;1m[rows:-][0m SELECT * FROM `mnt_sign` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.756ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_sign' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.341ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.567ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_sign' AND index_name = 'idx_user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.091ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.363ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.591ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_sign' AND index_name = 'idx_user_sign_at'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.089ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.389ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.875ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.tables WHERE table_schema = 'moredoc' AND table_name = 'mnt_report' AND table_type = 'BASE TABLE'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.098ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.392ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:148
+[0m[33m[0.202ms] [34;1m[rows:-][0m SELECT * FROM `mnt_report` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:166
+[0m[33m[0.853ms] [34;1m[rows:-][0m SELECT column_name, column_default, is_nullable = 'YES', data_type, character_maximum_length, column_type, column_key, extra, column_comment, numeric_precision, numeric_scale FROM information_schema.columns WHERE table_schema = 'moredoc' AND table_name = 'mnt_report' ORDER BY ORDINAL_POSITION
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.079ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.367ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.632ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_report' AND index_name = 'idx_user_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.079ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.374ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.592ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_report' AND index_name = 'idx_status'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:228
+[0m[33m[0.082ms] [34;1m[rows:-][0m SELECT DATABASE()
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/go/pkg/mod/gorm.io/driver/mysql@v1.3.2/migrator.go:231
+[0m[33m[0.348ms] [34;1m[rows:1][0m SELECT SCHEMA_NAME from Information_schema.SCHEMATA where SCHEMA_NAME LIKE 'moredoc%' ORDER BY SCHEMA_NAME='moredoc' DESC limit 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:180
+[0m[33m[0.577ms] [34;1m[rows:-][0m SELECT count(*) FROM information_schema.statistics WHERE table_schema = 'moredoc' AND table_name = 'mnt_report' AND index_name = 'idx_document_id'
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:284
+[0m[33m[0.161ms] [34;1m[rows:1][0m SELECT * FROM `mnt_group` ORDER BY `mnt_group`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.295ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.UserAPI/ListUser' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.229ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.GroupAPI/CreateGroup' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.224ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.FriendlinkAPI/ListFriendlink' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.212ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.FriendlinkAPI/CreateFriendlink' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.227ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.FriendlinkAPI/UpdateFriendlink' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.FriendlinkAPI/DeleteFriendlink' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.210ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.AttachmentAPI/ListAttachment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.204ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.AttachmentAPI/DeleteAttachment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.193ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.AttachmentAPI/UpdateAttachment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.BannerAPI/ListBanner' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.220ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'POST' and path = '/api/v1/upload/banner' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.200ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.BannerAPI/CreateBanner' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.252ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.BannerAPI/UpdateBanner' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.324ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.BannerAPI/DeleteBanner' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.236ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.AttachmentAPI/GetAttachment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.222ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.BannerAPI/GetBanner' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.226ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.FriendlinkAPI/GetFriendlink' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.227ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.GroupAPI/DeleteGroup' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.232ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.GroupAPI/UpdateGroup' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.239ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.GroupAPI/ListGroup' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.233ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.PermissionAPI/ListPermission' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.232ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.PermissionAPI/GetPermission' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.228ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.PermissionAPI/UpdatePermission' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.221ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.GroupAPI/GetGroupPermission' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.221ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.GroupAPI/UpdateGroupPermission' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.200ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ConfigAPI/ListConfig' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.195ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ConfigAPI/UpdateConfig' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.228ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.UserAPI/AddUser' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.210ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.UserAPI/SetUser' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.210ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.UserAPI/DeleteUser' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.201ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.UserAPI/UpdateUserProfile' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.246ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.UserAPI/GetUser' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.214ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CategoryAPI/ListCategory' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.247ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CategoryAPI/GetCategory' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.192ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CategoryAPI/CreateCategory' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.227ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CategoryAPI/UpdateCategory' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.249ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CategoryAPI/DeleteCategory' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.215ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.DocumentAPI/ListDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.266ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.DocumentAPI/DeleteDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.205ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.DocumentAPI/GetDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.214ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.DocumentAPI/UpdateDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.209ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.RecycleAPI/ListRecycleDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.196ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.RecycleAPI/RecoverRecycleDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.238ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.RecycleAPI/ClearRecycleDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.235ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.RecycleAPI/DeleteRecycleDocument' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.203ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ArticleAPI/ListArticle' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.257ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ArticleAPI/UpdateArticle' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.259ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ArticleAPI/DeleteArticle' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.226ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ArticleAPI/CreateArticle' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.220ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'POST' and path = '/api/v1/upload/article' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.243ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'POST' and path = '/api/v1/upload/category' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.218ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'POST' and path = '/api/v1/upload/config' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.217ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CommentAPI/ListComment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.219ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CommentAPI/GetComment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.232ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CommentAPI/CheckComment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.254ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.CommentAPI/DeleteComment' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.216ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.DocumentAPI/SetDocumentRecommend' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.198ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ReportAPI/ListReport' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.211ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ReportAPI/UpdateReport' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ReportAPI/DeleteReport' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:306
+[0m[33m[0.204ms] [34;1m[rows:1][0m SELECT * FROM `mnt_permission` WHERE method = 'GRPC' and path = '/api.v1.ConfigAPI/GetStats' ORDER BY `mnt_permission`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/user.go:297
+[0m[33m[0.142ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_user` ORDER BY `mnt_user`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.203ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'sitename' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[1.737ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站名称',`name`='sitename',`placeholder`='请输入您网站的名称，如：魔豆文库',`input_type`='text',`category`='system',`sort`=10,`updated_at`='2023-01-24 21:13:31.3' WHERE `id` = 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.260ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'title' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.771ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='首页标题',`name`='title',`placeholder`='请输入您网站的首页标题，如：魔豆文库，强大、专业的文库系统',`input_type`='text',`category`='system',`sort`=20,`updated_at`='2023-01-24 21:13:31.302' WHERE `id` = 2
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.238ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'keywords' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.688ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站关键字',`name`='keywords',`placeholder`='请输入您网站的关键字',`input_type`='text',`category`='system',`sort`=30,`updated_at`='2023-01-24 21:13:31.303' WHERE `id` = 3
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.243ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'description' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.696ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站描述',`name`='description',`placeholder`='请输入您网站的描述',`input_type`='textarea',`category`='system',`sort`=40,`updated_at`='2023-01-24 21:13:31.304' WHERE `id` = 4
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.262ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'recommend_words' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[1.183ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='首页搜索推荐词',`name`='recommend_words',`placeholder`='网站首页搜索推荐关键字，多个关键字用英文逗号分隔',`input_type`='text',`category`='system',`sort`=50,`updated_at`='2023-01-24 21:13:31.305' WHERE `id` = 5
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.224ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'logo' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.691ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站Logo',`name`='logo',`placeholder`='请上传一张图片作为网站Logo',`input_type`='image',`category`='system',`sort`=60,`updated_at`='2023-01-24 21:13:31.307' WHERE `id` = 6
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'favicon' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.707ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站Favicon',`name`='favicon',`placeholder`='请上传一张 .ico 图标作为网站favicon',`input_type`='image',`category`='system',`sort`=61,`updated_at`='2023-01-24 21:13:31.308' WHERE `id` = 7
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.234ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'register_background' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.740ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='注册页背景图',`name`='register_background',`placeholder`='请上传一张图片作为注册页背景图',`input_type`='image',`category`='system',`sort`=62,`updated_at`='2023-01-24 21:13:31.309' WHERE `id` = 8
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.255ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'login_background' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.768ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='登录页背景图',`name`='login_background',`placeholder`='请上传一张图片作为登录页背景图',`input_type`='image',`category`='system',`sort`=63,`updated_at`='2023-01-24 21:13:31.31' WHERE `id` = 9
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.254ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'icp' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.737ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站备案号',`name`='icp',`placeholder`='请输入您网站的备案号',`input_type`='text',`category`='system',`sort`=69,`updated_at`='2023-01-24 21:13:31.311' WHERE `id` = 10
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.224ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'domain' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[1.172ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站域名',`name`='domain',`placeholder`='请输入您网站的域名访问地址，如 https://moredoc.mnt.ltd，用以生成网站地图sitemap',`input_type`='text',`category`='system',`sort`=70,`updated_at`='2023-01-24 21:13:31.312' WHERE `id` = 11
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.226ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'copyright_start_year' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.653ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='版权起始年',`name`='copyright_start_year',`placeholder`='请输入您网站版权起始年，如：2019，则前台会显示如 ©2019 - 2022 的字样',`input_type`='text',`category`='system',`sort`=80,`updated_at`='2023-01-24 21:13:31.313' WHERE `id` = 12
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.215ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'analytics' AND category = 'system' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.704ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='网站统计代码',`name`='analytics',`placeholder`='请输入您网站的统计代码',`input_type`='textarea',`category`='system',`sort`=90,`updated_at`='2023-01-24 21:13:31.314' WHERE `id` = 13
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.209ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'height' AND category = 'captcha' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.631ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='验证码高度',`name`='height',`placeholder`='请输入验证码高度，默认为60',`input_type`='number',`category`='captcha',`sort`=13,`updated_at`='2023-01-24 21:13:31.315' WHERE `id` = 14
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'width' AND category = 'captcha' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.639ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='验证码宽度',`name`='width',`placeholder`='请输入验证码宽度，默认为240',`input_type`='number',`category`='captcha',`sort`=14,`updated_at`='2023-01-24 21:13:31.316' WHERE `id` = 15
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.200ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'length' AND category = 'captcha' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.691ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='验证码长度',`name`='length',`placeholder`='请输入验证码长度，默认为6',`input_type`='number',`category`='captcha',`sort`=15,`updated_at`='2023-01-24 21:13:31.317' WHERE `id` = 16
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.226ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'type' AND category = 'captcha' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.700ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='验证码类型',`name`='type',`placeholder`='请选择验证码类型，默认为数字',`input_type`='select',`category`='captcha',`sort`=16,`options`='string:字符串
+math:算术
+chinese:中文
+digit:数字
+audio:语音',`updated_at`='2023-01-24 21:13:31.318' WHERE `id` = 17
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.216ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'max_document_size' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.635ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='最大文档大小(MB)',`name`='max_document_size',`placeholder`='允许用户上传的最大文档大小，默认为50，即50MB',`input_type`='number',`category`='security',`sort`=15,`updated_at`='2023-01-24 21:13:31.319' WHERE `id` = 18
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.214ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'comment_interval' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.660ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='评论时间间隔',`name`='comment_interval',`placeholder`='用户评论时间间隔，单位为秒。0表示不限制。',`input_type`='number',`category`='security',`sort`=15,`updated_at`='2023-01-24 21:13:31.32' WHERE `id` = 19
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.218ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'document_related_duration' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.707ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='文档的【相关文档】有效期',`name`='document_related_duration',`placeholder`='文档的相关联文档的有效期，默认为7，即7天，0或小于0，表示不开启相关文档功能',`input_type`='number',`category`='security',`sort`=15,`updated_at`='2023-01-24 21:13:31.321' WHERE `id` = 20
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.232ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'is_close' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.647ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否关闭网站',`name`='is_close',`placeholder`='请选择是否关闭网站',`input_type`='switch',`category`='security',`sort`=16,`updated_at`='2023-01-24 21:13:31.322' WHERE `id` = 21
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.211ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'close_statement' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.633ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='闭站说明',`name`='close_statement',`placeholder`='关闭网站后，页面提示的内容',`input_type`='textarea',`category`='security',`sort`=17,`updated_at`='2023-01-24 21:13:31.323' WHERE `id` = 22
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.214ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_register' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.685ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否允许注册',`name`='enable_register',`placeholder`='请选择是否允许用户注册',`input_type`='switch',`category`='security',`sort`=18,`updated_at`='2023-01-24 21:13:31.324' WHERE `id` = 23
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.227ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_captcha_login' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.607ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否开启登录验证码',`name`='enable_captcha_login',`placeholder`='请选择是否开启登录验证码',`input_type`='switch',`category`='security',`sort`=19,`updated_at`='2023-01-24 21:13:31.325' WHERE `id` = 24
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.214ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_captcha_register' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.643ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否开启注册验证码',`name`='enable_captcha_register',`placeholder`='请选择是否开启注册验证码',`input_type`='switch',`category`='security',`sort`=20,`updated_at`='2023-01-24 21:13:31.326' WHERE `id` = 25
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.229ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_captcha_comment' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[1.087ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否开启评论验证码',`name`='enable_captcha_comment',`placeholder`='请选择是否开启评论验证码',`input_type`='switch',`category`='security',`sort`=21,`updated_at`='2023-01-24 21:13:31.327' WHERE `id` = 26
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.218ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_captcha_find_password' AND category = 'security' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.604ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否开启找回密码验证码',`name`='enable_captcha_find_password',`placeholder`='请选择是否开启找回密码验证码',`input_type`='switch',`category`='security',`sort`=22,`updated_at`='2023-01-24 21:13:31.328' WHERE `id` = 27
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.219ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'about' AND category = 'footer' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.677ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='关于我们',`name`='about',`placeholder`='请输入关于我们的链接地址，留空表示不显示',`input_type`='text',`category`='footer',`sort`=24,`updated_at`='2023-01-24 21:13:31.329' WHERE `id` = 28
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.215ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'contact' AND category = 'footer' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.625ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='联系我们',`name`='contact',`placeholder`='请输入联系我们的链接地址，留空表示不显示',`input_type`='text',`category`='footer',`sort`=25,`updated_at`='2023-01-24 21:13:31.33' WHERE `id` = 29
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.212ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'agreement' AND category = 'footer' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.635ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='文库协议',`name`='agreement',`placeholder`='请输入文库协议的链接地址，留空表示不显示',`input_type`='text',`category`='footer',`sort`=26,`updated_at`='2023-01-24 21:13:31.331' WHERE `id` = 30
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.249ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'copyright' AND category = 'footer' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.694ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='免责声明',`name`='copyright',`placeholder`='请输入免责声明的链接地址，留空表示不显示',`input_type`='text',`category`='footer',`sort`=27,`updated_at`='2023-01-24 21:13:31.332' WHERE `id` = 31
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.233ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'feedback' AND category = 'footer' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.628ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='意见反馈',`name`='feedback',`placeholder`='请输入意见反馈的链接地址，留空表示不显示',`input_type`='text',`category`='footer',`sort`=28,`updated_at`='2023-01-24 21:13:31.333' WHERE `id` = 32
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.223ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'max_preview' AND category = 'converter' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.714ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='最大预览页数',`name`='max_preview',`placeholder`='文档允许的最大预览页数，0表示不限制',`input_type`='number',`category`='converter',`sort`=15,`updated_at`='2023-01-24 21:13:31.334' WHERE `id` = 33
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.241ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'timeout' AND category = 'converter' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.707ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='转换超时(分钟)',`name`='timeout',`placeholder`='文档转换超时时间，默认为30分钟',`input_type`='number',`category`='converter',`sort`=16,`updated_at`='2023-01-24 21:13:31.335' WHERE `id` = 34
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.274ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_gzip' AND category = 'converter' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.709ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否启用GZIP压缩',`name`='enable_gzip',`placeholder`='是否对文档SVG预览文件启用GZIP压缩，启用后转换效率会【稍微】下降，但相对直接的SVG文件减少75%的存储空间',`input_type`='switch',`category`='converter',`sort`=17,`updated_at`='2023-01-24 21:13:31.336' WHERE `id` = 35
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.236ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_svgo' AND category = 'converter' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.638ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否启用SVGO',`name`='enable_svgo',`placeholder`='是否对文档SVG预览文件启用SVGO压缩，启用后转换效率会【明显】下降，但相对直接的SVG文件减少50%左右的存储空间',`input_type`='switch',`category`='converter',`sort`=18,`updated_at`='2023-01-24 21:13:31.337' WHERE `id` = 36
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.228ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'enable_guest_download' AND category = 'download' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.651ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='是否允许游客下载',`name`='enable_guest_download',`placeholder`='是否允许游客下载。启用之后，未登录用户可以下载免费文档，且不受下载次数控制',`input_type`='switch',`category`='download',`sort`=10,`updated_at`='2023-01-24 21:13:31.338' WHERE `id` = 37
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'free_download_duration' AND category = 'download' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.650ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='购买文档后多少天内允许免费重复下载',`name`='free_download_duration',`placeholder`='0表示再次下载仍需购买，大于0表示指定多少天内有效',`input_type`='number',`category`='download',`sort`=20,`updated_at`='2023-01-24 21:13:31.339' WHERE `id` = 38
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'url_duration' AND category = 'download' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.695ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='下载链接有效时长(秒)',`name`='url_duration',`placeholder`='生成文档下载链接后多少秒之后链接失效',`input_type`='number',`category`='download',`sort`=30,`updated_at`='2023-01-24 21:13:31.34' WHERE `id` = 39
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.209ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'times_every_day' AND category = 'download' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.635ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='每天允许下载次数',`name`='times_every_day',`placeholder`='每天允许下载多少篇文档，0表示不允许下载',`input_type`='number',`category`='download',`sort`=40,`updated_at`='2023-01-24 21:13:31.341' WHERE `id` = 40
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.219ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'secret_key' AND category = 'download' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.606ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='链接签名密钥',`name`='secret_key',`placeholder`='链接签名密钥，用于加密下载链接',`input_type`='text',`category`='download',`sort`=50,`updated_at`='2023-01-24 21:13:31.341' WHERE `id` = 41
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.222ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'register' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.717ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='注册',`name`='register',`placeholder`='注册时获得的魔豆',`input_type`='number',`category`='score',`sort`=10,`updated_at`='2023-01-24 21:13:31.342' WHERE `id` = 42
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.222ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'sign_in' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.628ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='签到',`name`='sign_in',`placeholder`='每日签到获得的魔豆',`input_type`='number',`category`='score',`sort`=20,`updated_at`='2023-01-24 21:13:31.343' WHERE `id` = 43
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.217ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'delete_document' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.616ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='删除文档',`name`='delete_document',`placeholder`='删除上传文档扣除的魔豆，0表示不扣除',`input_type`='number',`category`='score',`sort`=25,`updated_at`='2023-01-24 21:13:31.344' WHERE `id` = 44
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.242ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'upload_document' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.639ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='上传文档',`name`='upload_document',`placeholder`='上传一篇文档可获得的魔豆',`input_type`='number',`category`='score',`sort`=30,`updated_at`='2023-01-24 21:13:31.345' WHERE `id` = 45
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.200ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'upload_document_limit' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.687ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='每日上传文档奖励次数',`name`='upload_document_limit',`placeholder`='每天最多可以获得多少次文档上传奖励，0表示无奖励。',`input_type`='number',`category`='score',`sort`=40,`updated_at`='2023-01-24 21:13:31.346' WHERE `id` = 46
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.219ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'document_collected' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.627ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='文档被收藏',`name`='document_collected',`placeholder`='上传的文档被收藏后获得的魔豆',`input_type`='number',`category`='score',`sort`=50,`updated_at`='2023-01-24 21:13:31.347' WHERE `id` = 47
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.213ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'document_collected_limit' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.613ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='每日文档被收藏奖励次数',`name`='document_collected_limit',`placeholder`='每天最多可以获得多少次文档被收藏奖励，0表示无奖励。',`input_type`='number',`category`='score',`sort`=60,`updated_at`='2023-01-24 21:13:31.348' WHERE `id` = 48
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.223ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'document_commented' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.694ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='文档被评论',`name`='document_commented',`placeholder`='上传的文档被评论后获得的魔豆',`input_type`='number',`category`='score',`sort`=70,`updated_at`='2023-01-24 21:13:31.349' WHERE `id` = 49
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:134
+[0m[33m[0.203ms] [34;1m[rows:1][0m SELECT `id` FROM `mnt_config` WHERE name = 'document_commented_limit' AND category = 'score' ORDER BY `mnt_config`.`id` LIMIT 1
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/config.go:595
+[0m[33m[0.600ms] [34;1m[rows:1][0m UPDATE `mnt_config` SET `label`='每日文档被评论奖励次数',`name`='document_commented_limit',`placeholder`='每天最多可以获得多少次文档被评论奖励，0表示无奖励。',`input_type`='number',`category`='score',`sort`=80,`updated_at`='2023-01-24 21:13:31.35' WHERE `id` = 50
+
+2023/01/24 21:13:31 [32m/Users/hanshenghui/WeWork/go-test/moredoc_new/model/init.go:318
+[0m[33m[0.159ms] [34;1m[rows:1][0m SELECT * FROM `mnt_friendlink`
+{"level":"info","ts":"2023-01-24T21:13:31.350+0800","logger":"syncdb","caller":"service/syncdb.go:23","msg":"syncdb success"}

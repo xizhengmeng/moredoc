@@ -163,7 +163,10 @@ func (c *Converter) ConvertPDFToSVG(src string, fromPage, toPage int, enableSVGO
 
 // ConvertPDFToPNG 将PDF转为PNG
 func (c *Converter) ConvertPDFToPNG(src string, fromPage, toPage int) (pages []Page, err error) {
-	return c.convertPDFToPage(src, fromPage, toPage, ".png")
+	// return c.convertPDFToPage(src, fromPage, toPage, ".png")
+	pages = nil
+	err = nil
+	return
 }
 
 func (c *Converter) PDFToPDF(src string) (dst string, err error) {
@@ -181,6 +184,7 @@ func (c *Converter) convertPDFToPage(src string, fromPage, toPage int, ext strin
 	pageRange := fmt.Sprintf("%d-%d", fromPage, toPage)
 	workspace := c.makeWorkspace(src)
 	cacheFileFormat := workspace + "/%d" + ext
+
 	args := []string{
 		"convert",
 		"-o",
@@ -188,8 +192,17 @@ func (c *Converter) convertPDFToPage(src string, fromPage, toPage int, ext strin
 		src,
 		pageRange,
 	}
+
+	args1 := []string{
+		src,
+		cacheFileFormat,
+		"all",
+	}
+
 	c.logger.Debug("convert pdf to page", zap.String("cmd", mutool), zap.Strings("args", args))
-	_, err = util.ExecCommand(mutool, args, c.timeout)
+	cmd := exec.Command("pdf2svg", args1...)
+	err = cmd.Run()
+	// _, err = util.ExecCommand(mutool, args, c.timeout)
 	if err != nil {
 		return
 	}
@@ -206,6 +219,29 @@ func (c *Converter) convertPDFToPage(src string, fromPage, toPage int, ext strin
 	}
 	return
 }
+
+// 将 PDF 转成 SVG
+// func ConvertPDF2SVG(pdfFile, svgFile string, pageNO int) (err error) {
+// 	pdf2svg := strings.TrimSpace(GetConfig("depend", "pdf2svg", "pdf2svg"))
+
+// 	//Usage: pdf2svg <in file.pdf> <out file.svg> [<page no>]
+// 	pdfFile, _ = filepath.Abs(pdfFile)
+// 	svgFile, _ = filepath.Abs(svgFile)
+// 	args := []string{pdfFile, svgFile, strconv.Itoa(pageNO)}
+// 	cmd := exec.Command(pdf2svg, args...)
+// 	if strings.HasPrefix(pdf2svg, "sudo") {
+// 		args = append([]string{strings.TrimPrefix(pdf2svg, "sudo")}, args...)
+// 		cmd = exec.Command("sudo", args...)
+// 	}
+// 	time.AfterFunc(30*time.Second, func() {
+// 		if cmd.Process != nil {
+// 			cmd.Process.Kill()
+// 		}
+// 	})
+
+// 	err = cmd.Run()
+// 	return
+// }
 
 func (c *Converter) convertToPDFBySoffice(src string) (dst string, err error) {
 	workspace := c.makeWorkspace(src)

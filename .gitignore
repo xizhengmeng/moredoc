@@ -1,5 +1,4 @@
 go.sum
-*.toml
 !app.example.toml
 *.exe
 *.exe~
